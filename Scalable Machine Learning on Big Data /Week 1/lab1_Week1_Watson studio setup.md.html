@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <center>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/IDSNlogo.png" width="200" height="200">
+    </center>
+    <p>Estimated time needed: <strong>30</strong> minutes</p>
+    <p>Objective for Exercise:</p>
+    <ul>
+      <li>For this project, you will use your IBM Watson Studio account from the previous chapter.</li>
+    </ul>
+    <p><em>If you have not created a Watson service before proceed with Step 1, otherwise go to Step 2:</em></p>
+    <h4>Step 1: For New Users (with no Watson service):</h4>
+    <p>Go to the IBM Cloud Watson Studio page:</p>
+    <p><a href="https://cloud.ibm.com/catalog/services/watson-studio?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork-20647446&#x26;cm_mmca1=000026UJ&#x26;cm_mmca2=10006555&#x26;cm_mmca3=M12345678&#x26;cvosrc=email.Newsletter.M12345678&#x26;cvo_campaign=000026UJ" target="_blank" rel="external">Click here</a></p>
+    <p>You will see the screen in the figure below. Click the icon in the red box:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image1.png" width="550"><br>
+    </p>
+    <p>Then click <strong>Watson</strong>, as shown below:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image2.png" width="550"><br>
+    </p>
+    <p>Then click <strong>Browse Services</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image3.png" width="550"><br>
+    </p>
+    <p>Scroll down and select <strong>Watson Studio - Lite</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image4.png" width="550"><br>
+    </p>
+    <p>To create a Watson service using the Lite plan, click <strong>Create</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image5.png" width="550"><br>
+    </p>
+    <p>Now click <strong>Get Started</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image6.png" width="550"><br>
+    </p>
+    <p>After creating the service continue with Step 2.</p>
+    <h4>Step 2: For Existing Users (who already have Watson Service):</h4>
+    <p>Go to the IBM Cloud Dashboard and click <strong>Services</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image7.png" width="550"><br>
+    </p>
+    <p>When you click on Services, all your existing services will be shown in the list. Click the <strong>Watson Studio</strong> service you created:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image8.png" width="550"><br>
+    </p>
+    <p>Then click <strong>Get Started</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image9.png" width="550"><br>
+    </p>
+    <h4>Step 3: Creating a Project</h4>
+    <p>Now you have to Create a project.</p>
+    <p>Click on <strong>Create a project</strong>:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image10.png" width="550"><br>
+    </p>
+    <p>On the Create a project page, click <strong>Create an empty project</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image11.png" width="550"><br>
+    </p>
+    <p>Provide a <strong>Project Name</strong> and <strong>Description</strong>, as shown below:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/add1.PNG" width="550"><br>
+    </p>
+    <p>You must also create storage for the project.</p>
+    <p>Click <strong>Add</strong></p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image13.png" width="550"><br>
+    </p>
+    <p>On the Cloud Object Storage page, scroll down and then click <strong>Create</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image14.png" width="550"><br>
+    </p>
+    <p>In the Confirm Creation box, click <strong>Confirm</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image15.png" width="250"><br>
+    </p>
+    <p>On the New project page, note that the storage has been added, and then click <strong>Create</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/add2.PNG" width="550"><br>
+    </p>
+    <p>After creating the project continue with Step 3.</p>
+    <h4>Step 3: Adding a Notebook to the Project:</h4>
+    <p>You need to add a Notebook to your project. Click <strong>Add to project</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/add3.PNG" width="550"><br>
+    </p>
+    <p>In the list of asset types, click <strong>Notebook</strong>:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/add4.PNG" width="550"><br>
+    </p>
+    <p>On the New Notebook page, enter a name for the notebook, and then click <strong>From URL</strong>.</p>
+    <p>Copy this <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/a6_w1_ex1.ipynb" target="_blank">link</a></p>
+    <p>Paste it into the <strong>Notebook URL</strong> box, and then click <strong>Create Notebook</strong>.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/lab1.PNG" width="550"><br>
+    </p>
+    <p>You will see this Notebook:</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/lab12.PNG" width="550"><br>
+    </p>
+    <p>Once you complete your notebook you will have to share it. Select the icon on the top right a marked in red in the image below, a dialogue box should open, select the option all content excluding sensitive code cells.</p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image22.png" width="550"><br>
+    </p>
+    <p>
+      <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork/labs/Week1/images/PY0101EN_FA_Image23.png" width="550"><br>
+    </p>
+    <h2>Author(s)</h2>
+    <p><a href="linkedin.com/in/romeo-kienzler-089b4557?cm_mmc=Email_Newsletter-_-Developer_Ed%2BTech-_-WW_WW-_-SkillsNetwork-Courses-IBMDeveloperSkillsNetwork-ML0201EN-SkillsNetwork-20647446&#x26;cm_mmca1=000026UJ&#x26;cm_mmca2=10006555&#x26;cm_mmca3=M12345678&#x26;cvosrc=email.Newsletter.M12345678&#x26;cvo_campaign=000026UJ">Romeo Kienzler</a></p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-09-30</td>
+          <td>2.0</td>
+          <td>Anamika</td>
+          <td>Created the version on gitlab</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.min.js"></script>
+  </body>
+</html>
